@@ -1,0 +1,22 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Build service tanpa external dependency",
+  "main": "index.js",
+  "author": "zainul bahar",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack --config build/webpack.config.js --env target=development --mode development --watch",
+    "build": "webpack --config build/webpack.config.js --env target=production"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
